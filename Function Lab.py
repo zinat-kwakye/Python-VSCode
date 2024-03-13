@@ -26,3 +26,6 @@ print ("The mean number is:",round(mean,2))
 
 #The median to 2 d.p.
 print ("The median number is:",statistics.median(grades))
+
+#.string format
+print("The average is {} and the mean is {}".format(average,mean))
