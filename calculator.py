@@ -6,24 +6,35 @@ num2 = float(input("Please enter the second number: "))
 
 print("\nCalculator Menu \n1. Add       +\n2. Subtract  -\n3. Multiply  *\n4. Divide    /\n5. Square    **\n")
 
-operator = print(input("Enter the operation you'd like to perform: "))
+sign = input("Enter the number of the operation you'd like to perform: ")
 
-if operator in ("1" or "+" or "plus" or "add"):
-    print(f"The result of {num1} + {num2} = ", num1 + num2)
+if sign == "1" or sign == "+" :
+    result = num1 + num2
+    print(f"The result of {num1} + {num2} = ", result)
+   
 
-elif operator in ("2" or "-" or "minus" or "subtract"):
-    print(f"The result of {num1} - {num2} = ", num1 - num2)
+elif sign == "2" or sign == "-": #or "minus" or "subtract":
+    result = num1 - num2
+    print(f"The result of {num1} - {num2} = ", result)
+        
 
-elif operator in ("3" or "*" or "x" or "times"):
-    print(f"The result of {num1} * {num2} = ", num1 * num2)
+elif sign == "3" or sign == "*" or sign == "x":
+    result = num1 * num2
+    print(f"The result of {num1} * {num2} = ", result)
+        
 
-elif operator in ("4" or "/" or "divide"):
-    print(f"The result of {num1} / {num2} = ", num1 / num2)
+elif sign == "4" or sign == "/": #or "divide":
+   result = num1 / num2
+   print(f"The result of {num1} / {num2} = ", result)
+        
 
-elif operator in ("5" or "**" or "^2" or "square"):
-    print(f"The result of {num1} ** {num2} = ", num1 ** num2)
-
+elif sign == "5" or sign == "**" or sign == "xx" or sign == "square":
+    result = num1 ** num2
+    print(f"The result of {num1} ** {num2} = ", result)
+        
 else:
     print ("Invalid operator. Please enter the figures again.")
+
+
 
 
